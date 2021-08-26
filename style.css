@@ -1,0 +1,115 @@
+/*Resetando estilização padrão do navegador*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/*Estilizando o BODY da aplicação*/
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000e1a;
+}
+
+/*Estilizando o card de login*/
+.card{
+    width: 300px;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 3px;
+}
+
+/*Estilizando o titulo de bem-vindo*/
+.card h1{
+    font-size: 24px;
+    color: #000e1a;
+}
+
+/*Estilizando a descrição do card*/
+.card p{
+    font-size: 14px;
+    color: #000e1aab;
+    margin-bottom: 20px;
+}
+
+/*Estilizando a area onde ficará o input e o label*/
+.area-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+/*Estilizando o label do input*/
+.area-input label{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    background-color: aliceblue;
+    font-weight: 500;
+    padding: 0 5px;
+    transform: translateY(-50%);
+}
+
+/*Estilizando o input*/
+.area-input input{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #000e1a;
+    color: #000e1a;
+}
+
+/*Estilizando os botões*/
+.card button{
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #3ca4ff;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+}
+.card button#criarConta{
+    background-color: #aad7ff;
+    color: #000e1a;
+    font-weight: 700;
+}
+.card button:hover{
+    filter: brightness(.8);
+}
+
+/*Estilizando o span de sepaação*/
+.card span{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+}
+.card span::before, .card span::after{
+    content: '';
+    height: 2px;
+    position: absolute;
+    width: 30px;
+    background-color: #000e1a;
+}
+.card span::before{
+    transform: translateX(-30px);
+}
+.card span::after{
+    transform: translateX(30px);
+}
